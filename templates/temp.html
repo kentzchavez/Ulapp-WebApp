@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and UV Index</title>
+</head>
+<body>
+    <!-- Search Bar for City -->
+    <form action="{{ url_for('index') }}" method="GET">
+        <label for="city">Search by City:</label>
+        <input type="text" id="city" name="city">
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Weather Forecast:</h2>
+    {% if weather_data %}
+        <p>City: {{ weather_data.city.name }}, {{ weather_data.city.country }}</p>
+        <ul>
+            {% for forecast in weather_data.list %}
+                <li>
+                    <strong>Date & Time:</strong> {{ forecast.dt_txt }}
+                    <ul>
+                        <li><strong>Temperature:</strong> {{ forecast.main.temp }}°C</li>
+                        <li><strong>Description:</strong> {{ forecast.weather[0].description }}</li>
+                        <li><strong>Cloudiness:</strong> {{ forecast.clouds.all }}%</li>
+                        <li><strong>Humidity:</strong> {{ forecast.main.humidity }}%</li>
+                        <li><strong>Wind Speed:</strong> {{ forecast.wind.speed }} m/s</li>
+                        <li><strong>Rain (3h):</strong> {{ forecast.rain['3h'] if forecast.rain else 0 }} mm</li>
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+        {% if uv_data %}
+            <h2>UV Index:</h2>
+            <p><strong>UV Index:</strong> {{ uv_data.uv_index }}</p>
+            {% if uv_data %}
+                <p><strong>Sunrise:</strong> {{ uv_data.sunrise }}</p>
+                <p><strong>Sunset:</strong> {{ uv_data.sunset }}</p>
+            {% else %}
+                <p>No sunrise/sunset data available.</p>
+            {% endif %}
+        {% else %}
+            <p>No UV index data available.</p>
+        {% endif %}
+    {% else %}
+        <p>No weather data available.</p>
+    {% endif %}
+    
+    <h1>Top 5 Articles:</h1>
+    <ul>
+        {% for title in articles_data %}
+            <li>{{ title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

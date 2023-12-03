@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>ULAPP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+  </head>
+  <body>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <div>
+      <link href="{{ url_for('static', filename='index.css') }}" rel="stylesheet" />
+
+      <div class="mainscreen-container">
+        <div class="mainscreen-mainscreen">
+          <img
+          src="{% if 6 <= current_hour < 9 %}
+                  {{ url_for('static', filename='external/6am.png') }}
+              {% elif 9 <= current_hour < 12 %}
+                  {{ url_for('static', filename='external/9am.png') }}
+              {% elif 12 <= current_hour < 18 %}
+                  {{ url_for('static', filename='external/12pm.png') }}
+              {% elif 18 <= current_hour < 24 %}
+                  {{ url_for('static', filename='external/6pm.png') }}
+              {% else %}
+                  {{ url_for('static', filename='external/12am.png') }}
+              {% endif %}"
+          alt="DynamicImage"
+          class="mainscreen-rectangle1"
+      />
+          <img
+            src="{{ url_for('static', filename='external/rectangle23958-dwj-300h.png') }}"
+            alt="Rectangle23958"
+            class="mainscreen-rectangle2"
+          />
+          <img
+            src="{{ url_for('static', filename='external/rectangle34714-uoh6-700w.png') }}"
+            alt="Rectangle34714"
+            class="mainscreen-rectangle3"
+          />
+          <img
+            src="{{ url_for('static', filename='external/rectangle58615-jctd-700h.png') }}"
+            alt="Rectangle58615"
+            class="mainscreen-rectangle5"
+          />
+          <img
+            src="{{ url_for('static', filename='external/rectangle7977-919e-500h.png') }}"
+            alt="Rectangle7977"
+            class="mainscreen-rectangle7"
+          />
+          <img
+            src="{{ url_for('static', filename='external/rectangle7977-919e-500h.png') }}"
+            alt="RectanglePreci"
+            class="mainscreen-preci"
+          />
+          <img
+            src="{{ url_for('static', filename='external/rectangle7977-919e-500h.png') }}"
+            alt="RectangleFourChart"
+            class="mainscreen-fourchart"
+          />
+          <img
+            src="{{ url_for('static', filename='external/rectangle68616-jyyq-500w.png') }}"
+            alt="Rectangle68616"
+            class="mainscreen-rectangle6"
+          />
+          <img
+            src="{{ url_for('static', filename='external/rectangle101222-xltq-500w.png') }}"
+            alt="Rectangle101222" 
+            class="mainscreen-rectangle10"
+          />
+          <img
+            src="{{ url_for('static', filename='external/rectangle111302-25jc-500w.png') }}"
+            alt="Rectangle111302"
+            class="mainscreen-rectangle11"
+          />
+          {% if weather_data %}
+          {% set current_hour = weather_data.list[0].dt_txt.split()[1].split(':')[0]|int %}
+          {% set time_image = "" %}
+          
+          {% if 6 <= current_hour < 12 %}
+              {% set greeting = "Good morning!" %}
+              {% set time_image = "cloudy-morning.svg" %}
+          {% elif 12 <= current_hour < 18 %}
+              {% set greeting = "Good afternoon!" %}
+              {% set time_image = "sunny.svg" %}
+          {% elif 18 <= current_hour < 24 %}
+              {% set greeting = "Good evening!" %}
+              {% set time_image = "cloudy-night.svg" %}
+          {% else %}
+              {% set greeting = "Good night!" %}
+              {% set time_image = "cloudy-night.svg" %}
+          {% endif %}
+      
+          <span class="mainscreen-text" style="width: 300px;"><span>{{ greeting }}</span></span>
+          <span class="mainscreen-text002" style="width: 300px;"><span>{{ weather_data.list[0].weather[0].description }}</span></span>
+          <span class="mainscreen-text004"><span>{{ weather_data.city.name }}, {{ weather_data.city.country }}</span></span>
+          <span class="mainscreen-text006"><span>{{uv_hourly['hourly_forecast'][current_hour+23]['temp_c']}}°</span></span>
+          <span class="mainscreen-text008" id="current-time" style="width: 200px; left: 1140px;"></span>
+          <span class="mainscreen-text010"><span>{{ weather_data.list[0].dt_txt.split()[0] }}</span></span>
+          <img src="{{ url_for('static', filename='external/' + time_image) }}" alt="{{ time_image }}" class="mainscreen-rainsvgrepocom1">
+
+          <!-- JavaScript to display current time -->
+          <script>
+              function updateTime() {
+                  var currentTime = new Date();
+                  var hours = currentTime.getHours();
+                  var minutes = currentTime.getMinutes();
+                  var am_pm = hours >= 12 ? "PM" : "AM";
+                  hours = hours % 12 || 12;
+                  minutes = minutes < 10 ? "0" + minutes : minutes;
+
+                  document.getElementById("current-time").innerText = hours + ":" + minutes + " " + am_pm;
+
+                  // Update every minute
+                  setTimeout(updateTime, 60000);
+              }
+
+              // Call the function to initiate
+              updateTime();
+          </script>
+           {% endif %}
+          <div class="mainscreen-group1">
+            <img
+              src="{{ url_for('static', filename='external/humiditysvgrepocom14280-g4vd.svg') }}"
+              alt="humiditysvgrepocom14280"
+              class="mainscreen-humiditysvgrepocom1"
+            />
+            <img
+              src="{{ url_for('static', filename='external/sun4289-lqp.svg') }}"
+              alt="sun4289"
+              class="mainscreen-sun"
+            />
+            <img
+              src="{{ url_for('static', filename='external/wind4287-mg5.svg') }}"
+              alt="wind4287"
+              class="mainscreen-wind"
+            />
+
+            {% if air_quality_index == 1 %}
+              {% set air_quality_msg = "Good" %}
+            {% elif air_quality_index == 2 %}
+              {% set air_quality_msg = "Fair" %}
+            {% elif air_quality_index == 3 %}
+              {% set air_quality_msg = "Moderate" %}
+            {% elif air_quality_index == 4 %}
+              {% set air_quality_msg = "Poor" %}
+            {% else %}
+              {% set air_quality_msg = "Very Poor" %}
+            {% endif %}
+            
+            {% if uv_hourly.uv_index < 3 %}
+              {% set uv_index_msg = "Low" %}
+            {% elif uv_hourly.uv_index < 6 %}
+              {% set uv_index_msg = "Moderate" %}
+            {% elif uv_hourly.uv_index < 8 %}
+              {% set uv_index_msg = "High" %}
+            {% elif uv_hourly.uv_index < 11 %}
+              {% set uv_index_msg = "Very High" %}
+            {% else %}
+              {% set uv_index_msg = "Extreme" %}
+            {% endif %}
+
+            <span class="mainscreen-text012"><span>Humidity</span></span>
+            <span class="mainscreen-text014"><span>Wind Speed</span></span>
+            <span class="mainscreen-text016"><span>Air Quality</span></span>
+            <span class="mainscreen-text018"><span>UV Index</span></span>
+            <span class="mainscreen-text020"><span>{{ weather_data.list[0].main.humidity }}%</span></span>
+            <span class="mainscreen-text022">{{ uv_hourly.uv_index }}</span>
+            <span class="mainscreen-text023"><span>&nbsp{{ uv_index_msg }}</span></span>
+            <span class="mainscreen-text025"><span>{{ air_quality_msg }}</span></span>
+            <span class="mainscreen-text027"><span>{{ weather_data.list[0].wind.speed }} km/h</span></span>
+            <img
+              src="{{ url_for('static', filename='external/airqualitycontrolmanagementenvironmentecologypurif4712-u9esp.svg') }}"
+              alt="airqualitycontrolmanagementenvironmentecologypurif4712"
+              class="mainscreen-airqualitycontrolmanagementenvironmentecologypurif"
+            />
+          </div>
+          <img
+            src="{{ url_for('static', filename='external/navigation4713-k09l.svg') }}"
+            alt="navigation4713"
+            class="mainscreen-navigation"
+          />
+          <span class="mainscreen-text029">
+            <span>Hourly Forecast</span>
+          </span>
+          </span>
+          <span class="mainscreen-text031">
+            {% if 'Rain'in weather_data.list[0].weather[0].main or 'Drizzle'in weather_data.list[0].weather[0].main or 'Thunderstorm'in weather_data.list[0].weather[0].main %}
+                {%  set weather_playlist = 'https://open.spotify.com/playlist/37i9dQZF1DXbvABJXBIyiY' %}
+                {% set weathery = 'rainy'  %}
+            {% elif 'Snow' in weather_data.list[0].weather[0].main %}
+                {% set weather_playlist = 'https://open.spotify.com/playlist/37i9dQZF1DXa8axQnFlj0R' %}
+                {% set weathery = 'snowy'  %}
+            {% elif 'Clouds' in weather_data.list[0].weather[0].main %} 
+                {% set weather_playlist = 'https://open.spotify.com/playlist/37i9dQZF1DWYoDXiQsd3D2'  %}
+                {% set weathery = 'cloudy'  %}
+            {% else %}
+                {% set weather_playlist = 'https://open.spotify.com/playlist/37i9dQZF1DX1BzILRveYHb'  %}
+                {% set weathery = 'clear'  %}
+            {% endif %}
+            <span><b>Here's an ULAPP certified playlist for {{ weathery }} weather</b></span>
+          </span>
+          {% if weather_data %}
+          {% for forecast in weather_data.list %}
+            <div class="mainscreen-group14">
+              <span class="mainscreen-text033"><span>Rain (3h)</span></span>
+              <span class="mainscreen-text035">
+                <span>{{ forecast.rain['3h'] if forecast.rain else 0 }}mm</span>
+              </span>
+            </div>
+          {% endfor %}
+          {% endif %}
+          <span class="mainscreen-text037"><span>Sunrise</span></span>
+          <span class="mainscreen-text039"><span>Sunset</span></span>
+          <span class="mainscreen-text041"><span>{{uv_hourly.sunrise}}</span></span>
+          <span class="mainscreen-text043"><span>{{uv_hourly.sunset}}</span></span>
+          <span class="mainscreen-text045">
+            <span><a href = '{{ weather_playlist }}'><u><b>Click here!</b></u></a></span>
+          </span>
+          <span class="mainscreen-text047"><span></span></span>
+          <span class="mainscreen-text049"><span>Weather News</span></span>
+          <div class="mainscreen-group2">
+            <span class="mainscreen-text051"><span>{{uv_hourly['hourly_forecast_to_display'][0]['time']}}</span></span>
+            <span class="mainscreen-text053"><span>{{uv_hourly['hourly_forecast_to_display'][0]['chance_of_rain']}}%</span></span>
+            <span class="mainscreen-text055"><span>{{uv_hourly['hourly_forecast_to_display'][0]['temp_c']}}°</span></span>
+            <img
+              src="{% if uv_hourly['hourly_forecast_to_display'][0]['chance_of_rain'] > 50 %}
+              {{ url_for('static', filename='external/icons8cloudwithrain4825122-m9yf-200w.png') }}
+            {% else %}
+            {% if current_hour-3 >= 18 or current_hour-3 < 5 %}
+            {{ url_for('static', filename='external/icons8cloud4815121-cqva-200w.png') }}
+        {% else %}
+            {{ url_for('static', filename='external/icons8sunbehindcloud4815121-wpyb-200w.png') }}
+        {% endif %}
+    {% endif %}"
+              alt="icons8cloudwithlightningandrain4815116"
+              class="mainscreen-icons8cloudwithlightningandrain481"
+            />
+          </div>
+          <div class="mainscreen-group3">
+            <span class="mainscreen-text057"><span>{{uv_hourly['hourly_forecast_to_display'][1]['time']}}</span></span>
+            <span class="mainscreen-text059"><span>{{uv_hourly['hourly_forecast_to_display'][1]['chance_of_rain']}}%</span></span>
+            <span class="mainscreen-text061"><span>{{uv_hourly['hourly_forecast_to_display'][1]['temp_c']}}°</span></span>
+            <img
+              src="{% if uv_hourly['hourly_forecast_to_display'][1]['chance_of_rain'] > 50 %}
+              {{ url_for('static', filename='external/icons8cloudwithrain4825122-m9yf-200w.png') }}
+            {% else %}
+            {% if current_hour-2 >= 18 or current_hour-2 < 5 %}
+            {{ url_for('static', filename='external/icons8cloud4815121-cqva-200w.png') }}
+        {% else %}
+            {{ url_for('static', filename='external/icons8sunbehindcloud4815121-wpyb-200w.png') }}
+        {% endif %}
+    {% endif %}"
+              alt="icons8cloudwithlightningandrain4825117"
+              class="mainscreen-icons8cloudwithlightningandrain482"
+            />
+          </div>
+          <div class="mainscreen-group4">
+            <img
+              src="{{ url_for('static', filename='external/rectangle84715-ffbn-200h.png') }}"
+              alt="Rectangle84715"
+              class="mainscreen-rectangle8"
+            />
+            <span class="mainscreen-text063"><span>{{uv_hourly['hourly_forecast_to_display'][2]['time']}}</span></span>
+            <span class="mainscreen-text065"><span>{{uv_hourly['hourly_forecast_to_display'][2]['chance_of_rain']}}%</span></span>
+            <span class="mainscreen-text067"><span>{{uv_hourly['hourly_forecast_to_display'][2]['temp_c']}}°</span></span>
+          </div>
+          <div class="mainscreen-group5">
+            <img
+              src="{{ url_for('static', filename='external/rectangle74715-og9m-200h.png') }}"
+              alt="Rectangle74715"
+              class="mainscreen-rectangle71"
+            />
+            <img
+              src="{{ url_for('static', filename='external/rectangle175118-zst-200h.png') }}"
+              alt="Rectangle175118"
+              class="mainscreen-rectangle17"
+            />
+            <span class="mainscreen-text069"><span>{{uv_hourly['hourly_forecast_to_display'][4]['time']}}</span></span>
+            <span class="mainscreen-text071"><span>{{uv_hourly['hourly_forecast_to_display'][4]['chance_of_rain']}}%</span></span>
+            <span class="mainscreen-text073"><span>{{uv_hourly['hourly_forecast_to_display'][4]['temp_c']}}°</span></span>
+            <img
+              src="{% if uv_hourly['hourly_forecast_to_display'][4]['chance_of_rain'] > 50 %}
+              {{ url_for('static', filename='external/icons8cloudwithrain4825122-m9yf-200w.png') }}
+            {% else %}
+            {% if current_hour+1 >= 18 or current_hour+1 < 5 %}
+            {{ url_for('static', filename='external/icons8cloud4815121-cqva-200w.png') }}
+        {% else %}
+            {{ url_for('static', filename='external/icons8sunbehindcloud4815121-wpyb-200w.png') }}
+        {% endif %}
+    {% endif %}"
+              alt="icons8cloudwithrain4815121"
+              class="mainscreen-icons8cloudwithrain481"
+            />
+          </div>
+          <div class="mainscreen-group8">
+            <img
+              src="{{ url_for('static', filename='external/rectangle155118-wka7-200h.png') }}"
+              
+              alt="Rectangle155118"
+              class="mainscreen-rectangle15"
+            />
+            <span class="mainscreen-text075"><span>NOW</span></span>
+            <span class="mainscreen-text077"><span>{{uv_hourly['hourly_forecast_to_display'][3]['chance_of_rain']}}%</span></span>
+            <span class="mainscreen-text079"><span>{{uv_hourly['hourly_forecast_to_display'][3]['temp_c']}}°</span></span>
+            <img
+              src="{% if uv_hourly['hourly_forecast_to_display'][3]['chance_of_rain'] > 50 %}
+              {{ url_for('static', filename='external/icons8cloudwithrain4825122-m9yf-200w.png') }}
+            {% else %}
+            {% if current_hour >= 18 or current_hour < 5 %}
+            {{ url_for('static', filename='external/icons8cloud4815121-cqva-200w.png') }}
+        {% else %}
+            {{ url_for('static', filename='external/icons8sunbehindcloud4815121-wpyb-200w.png') }}
+        {% endif %}
+    {% endif %}"
+              
+              alt="icons8cloudwithrain4825122"
+              class="mainscreen-icons8cloudwithrain482"
+            />
+          </div>
+          <div class="mainscreen-group6">
+            <img
+              src="{{ url_for('static', filename='external/rectangle185119-o2sr-200h.png') }}"
+              
+              alt="Rectangle185119"
+              class="mainscreen-rectangle18"
+            />
+            <img
+              src="{{ url_for('static', filename='external/rectangle195119-jspo-200h.png') }}"
+              
+              alt="Rectangle195119"
+              class="mainscreen-rectangle19"
+            />
+            <img
+              src="{{ url_for('static', filename='external/rectangle114715-tr0r-200h.png') }}"
+              
+              alt="Rectangle114715"
+              class="mainscreen-rectangle111"
+            />
+            <img
+              src="{{ url_for('static', filename='external/rectangle205119-et5h-200h.png') }}"
+              alt="Rectangle205119"
+              class="mainscreen-rectangle20"
+            />
+            <span class="mainscreen-text081"><span>{{uv_hourly['hourly_forecast_to_display'][5]['time']}}</span></span>
+            <span class="mainscreen-text083"><span>{{uv_hourly['hourly_forecast_to_display'][5]['chance_of_rain']}}%</span></span>
+            <span class="mainscreen-text085"><span>{{uv_hourly['hourly_forecast_to_display'][5]['temp_c']}}°</span></span>
+            <!--Icon before last cloud--><img
+              src="{% if uv_hourly['hourly_forecast_to_display'][5]['chance_of_rain'] > 50 %}
+              {{ url_for('static', filename='external/icons8cloudwithrain4825122-m9yf-200w.png') }}
+            {% else %}
+            {% if current_hour+2 >= 18 or current_hour+2 < 5 %}
+            {{ url_for('static', filename='external/icons8cloud4815121-cqva-200w.png') }}
+        {% else %}
+            {{ url_for('static', filename='external/icons8sunbehindcloud4815121-wpyb-200w.png') }}
+        {% endif %}
+    {% endif %}"
+              
+              alt="icons8cloud4815121"
+              class="mainscreen-icons8cloud481"
+            />
+            <!--Icon for last cloud--><img
+              src="{% if uv_hourly['hourly_forecast_to_display'][6]['chance_of_rain'] > 50 %}
+              {{ url_for('static', filename='external/icons8cloudwithrain4825122-m9yf-200w.png') }}
+            {% else %}
+            {% if current_hour+3 >= 18 or current_hour+3 < 5 %}
+            {{ url_for('static', filename='external/icons8cloud4815121-cqva-200w.png') }}
+        {% else %}
+            {{ url_for('static', filename='external/icons8sunbehindcloud4815121-wpyb-200w.png') }}
+        {% endif %}
+    {% endif %}"
+              
+              alt="icons8cloud4821472"
+              class="mainscreen-icons8cloud482"
+            />
+          </div>
+          <div class="mainscreen-group7">
+            <img
+              src="{{ url_for('static', filename='external/rectangle215120-1b6k-200h.png') }}"
+              
+              alt="Rectangle215120"
+              class="mainscreen-rectangle21"
+            />
+            <img
+              src="{{ url_for('static', filename='external/rectangle225121-sal-200h.png') }}"
+          
+              alt="Rectangle225121"
+              class="mainscreen-rectangle22"
+            />
+            <img
+              src="{{ url_for('static', filename='external/rectangle235121-lljp-200h.png') }}"
+              
+              alt="Rectangle235121"
+              class="mainscreen-rectangle23"
+            />
+            <img
+              src="{{ url_for('static', filename='external/rectangle124716-o2jo-200h.png') }}"
+              
+              alt="Rectangle124716"
+              class="mainscreen-rectangle12"
+            />
+            <img
+              src="{{ url_for('static', filename='external/rectangle245121-t3eh-200h.png') }}"
+              
+              alt="Rectangle245121"
+              class="mainscreen-rectangle24"
+            />
+            <span class="mainscreen-text087"><span>{{uv_hourly['hourly_forecast_to_display'][6]['time']}}</span></span>
+            <span class="mainscreen-text089"><span>{{uv_hourly['hourly_forecast_to_display'][6]['chance_of_rain']}}%</span></span>
+            <span class="mainscreen-text091"><span>{{uv_hourly['hourly_forecast_to_display'][6]['temp_c']}}°</span></span>
+            <img
+              src="{% if uv_hourly['hourly_forecast_to_display'][2]['chance_of_rain'] > 50 %}
+                    {{ url_for('static', filename='external/icons8cloudwithrain4825122-m9yf-200w.png') }}
+                  {% else %}
+                  {% if current_hour-1 >= 18 or current_hour-1 < 5 %}
+                  {{ url_for('static', filename='external/icons8cloud4815121-cqva-200w.png') }}
+              {% else %}
+                  {{ url_for('static', filename='external/icons8sunbehindcloud4815121-wpyb-200w.png') }}
+              {% endif %}
+          {% endif %}"
+              
+              alt="icons8sunbehindcloud4815121"
+              class="mainscreen-icons8sunbehindcloud481"
+            />
+          </div>
+          <img
+            src="{{ url_for('static', filename=articles_data[2][0]) }}"
+            
+            alt="image38616"
+            class="mainscreen-image3"
+          />
+          <img
+            src="{{ url_for('static', filename=articles_data[2][1]) }}"
+            
+            alt="image58616"
+            class="mainscreen-image5"
+          />
+          <img
+            src="{{ url_for('static', filename=articles_data[2][2]) }}"
+            
+            alt="image68616"
+            class="mainscreen-image6"
+          />
+          <img
+            src="{{ url_for('static', filename=articles_data[2][3]) }}"
+            
+            alt="image78616"
+            class="mainscreen-image7"
+          />
+          <img
+            src="{{ url_for('static', filename=articles_data[2][4]) }}"
+            
+            alt="image88616"
+            class="mainscreen-image8"
+          />
+          <div class="mainscreen-group9">
+            <span class="mainscreen-text093">
+              <span>
+                <a class="titles" href={{articles_data[3][0]}} target="_blank">
+                {{ articles_data[0][0] }}
+                </a>
+              </span>
+            </span>
+            <span class="mainscreen-text095"><span>{{ articles_data[1][0]}}</span></span>
+          </div>
+          <div class="mainscreen-group10">
+            <span class="mainscreen-text097">
+              <a class="titles" href={{articles_data[3][1]}} target="_blank">
+                {{ articles_data[0][1] }}
+                </a>
+            </span>
+            <span class="mainscreen-text099"><span>{{ articles_data[1][1] }}</span></span>
+          </div>
+          <div class="mainscreen-group11">
+            <span class="mainscreen-text101">
+              <span>                
+                <a class="titles" href={{articles_data[3][2]}} target="_blank">
+                {{ articles_data[0][2] }}
+                </a></span>
+            </span>
+            <span class="mainscreen-text103"><span>{{ articles_data[1][2] }}</span></span>
+          </div>
+          <div class="mainscreen-group12">
+            <span class="mainscreen-text105">
+              <span>
+                <a class="titles" href={{articles_data[3][3]}} target="_blank">
+                  {{ articles_data[0][3] }}
+                  </a>
+              </span>
+            </span>
+            <span class="mainscreen-text107"><span>{{ articles_data[1][3] }}</span></span>
+          </div>
+          <div class="mainscreen-group13">
+            <span class="mainscreen-text109">
+              <span>
+                <a class="titles" href={{articles_data[3][4]}} target="_blank">
+                  {{ articles_data[0][4] }}
+                  </a>
+              </span>
+            </span>
+            <span class="mainscreen-text111"><span>{{ articles_data[1][4] }}</span></span>
+          </div>
+          <img
+            src="{% if weathery == 'rainy' %}
+            {{ url_for('static', filename='public/external/rainy_day.png') }}
+            {% elif weathery == 'snowy' %}
+            {{ url_for('static', filename='public/external/snowy_day.png') }}
+          {% elif weathery == 'cloudy' %}
+          {{ url_for('static', filename='public/external/cloudy_day.png') }}
+          {% else %}
+          {{ url_for('static', filename='public/external/clear_day.png') }}
+          {% endif %}"
+            
+            alt="image101226"
+            class="mainscreen-image10"
+          />
+          <img
+            src="{{ url_for('static', filename='external/lightrainsvgrepocom11221-ra1k.svg') }}"
+            
+            alt="lightrainsvgrepocom11221"
+            class="mainscreen-lightrainsvgrepocom1"
+          />
+          <span class="mainscreen-text113">
+            <span>5-day Temperature Forecast</span>
+          </span>
+          <span class="mainscreen-textpreci">
+            <span>5-day Precipitation Forecast</span>
+          </span>
+          <span class="mainscreen-textfourchart">
+            <span>5-day Forecast Pattern Analysis</span>
+          </span>
+                    <!-- Search Bar for City -->
+                    <form id="weatherSearch" action="{{ url_for('index') }}" method="GET">
+                      <!-- Input field with background image -->
+                      <div class="mainscreen-rectangle4">
+                        <div type="text" id="city_name" placeholder="     Enter city name" class="transparent-input" style="width: 290px; height: 40px;"></div>
+                          <!-- Submit button with background image -->
+                          <button type="submit" class="mainscreen-searchsvgrepocom1" style="left: 290px; top: 7px;">
+                              <img src="{{ url_for('static', filename='public/external/searchsvgrepocom11685-wqi.svg') }}" alt="searchsvgrepocom11685">
+                          </a>
+                      </div>
+                  </form>
+          <img
+            src="{{ url_for('static', filename='external/ULAPP.svg') }}"
+            
+            alt="ULAPP11482"
+            class="mainscreen-ulapp1"
+          />
+          <img
+            src="{{ url_for('static', filename='temperature_graph.png') }}"
+            
+            alt="Vector11533"
+            class="mainscreen-vector1"
+          />
+          <img
+            src="{{ url_for('static', filename='preci_temp_graph.png') }}"
+            
+            alt="PreciPic"
+            class="mainscreen-preciPic"
+          />
+          <img
+            src="{{ url_for('static', filename='temp_hum_rain_wind_graph.png') }}"
+            
+            alt="FourChart"
+            class="mainscreen-fourchartPic"
+          />
+          <img
+            src="{{ url_for('static', filename='public/external/sunrisesvgrepocom311685-xfa.svg') }}"
+            
+            alt="sunrisesvgrepocom311685"
+            class="mainscreen-sunrisesvgrepocom31"
+          />
+          <img
+            src="{{ url_for('static', filename='public/external/sunsetsvgrepocom511686-x6x.svg') }}"
+            
+            alt="sunsetsvgrepocom511686"
+            class="mainscreen-sunsetsvgrepocom51"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='autocomplete.js') }}"></script>
+  </body>
+</html>

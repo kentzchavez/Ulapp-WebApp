@@ -1,0 +1,48 @@
+PIP Installs
+    >> pip install requests
+    >> pip install beautifulsoup4
+    >> pip install pandas
+    >> pip install scikit-learn
+    >> pip install joblib
+
+HOW TO RUN PYTHON FILES:
+    using terminal:
+    >> python [file name].py
+
+    if python file in 'articles' folder 
+    >> cd articles
+    >> python [file name].py
+
+    !! Do not run files in 'articles' folder in the main folder, make sure to change directory
+    !! Running on VS Code will not work (at least as far as I know)
+
+AI-NEWS-SECTION / main FOLDER
+    (1) get_articles.py
+            - Program used to gather the top 5 articles with their rating from the articles database (articles.xlsx on 'articles' folder)
+    (2) train_ai.py 
+            - Program used to train the AI mechanism
+    (3) training_dat.xlsx
+            - Training dataset
+    (4) weather_classifier_model.joblib
+            - Acts like the save file for the AI, saves the training progress that can be used to run get_articles.py.
+
+articles FOLDER
+    (1) add_article.py
+            - Opens a gui that allows user to add articles directly on the 'articles.xlsx'
+    (2) rappler_infos.py
+            - Web scraping tool that gathers articles on Rappler and puts them in 'articles.xlsx'
+    (3) scrape_weather.py
+            - Web crawler
+            - Gathers the article links on the main weather page of rappler that will be used by 'rappler_infos.py' to scrape the content within those article links
+    (4) sort_ex.py
+            - Organizes 'articles.xlsx' file whenever an article is added by 'add_article.py' or 'rappler_infos.py'
+    (5) articles.xlsx 
+            - Dataset that contains the actual articles to be displayed
+
+WHAT TO RUN
+    (a) If you want to manually add articles:
+            run 'add_article.py' in articles FOLDER
+    (b) If you want to update rappler articleS:
+            run 'rappler_infos.py' in articles FOLDER
+    (c) If you want to get the top 5 articles according to their priority:
+            run 'get_articles.py' in main FOLDER
